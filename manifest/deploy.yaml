@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dot-deployment
+  namespace: dotname
+  labels:
+    app: dotnetapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dotnetapp
+  template:
+    metadata:
+      labels:
+        app: dotnetapp
+    spec:
+      containers:
+      - name: dotnetapp
+        image: newcontainer12345.azurecr.io/newcontainer12345:2.2.2
+        ports:
+        - containerPort: 80
+      imagePullSecrets: 
+      - name: nani123
