@@ -23,11 +23,10 @@ steps:
     publishWebProjects: true
   displayName: 'dotnet publish $(buildConfiguration)'
 
-
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'sam'
     appType: 'webAppLinux'
-    appName: 'nani142434'
+    appName: 'nani123'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     runtimeStack: 'DOTNETCORE|6.0'
