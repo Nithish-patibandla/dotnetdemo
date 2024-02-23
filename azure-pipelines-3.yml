@@ -24,10 +24,6 @@ steps:
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
   displayName: 'dotnet publish $(buildConfiguration)'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    artifactName: 'publishedFiles'
 
 - task: AzureWebApp@1
   inputs:
