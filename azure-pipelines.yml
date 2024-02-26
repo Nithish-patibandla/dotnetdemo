@@ -33,6 +33,6 @@ steps:
   inputs:
     azureSubscription: 'man'
     appType: 'webAppLinux'
-    appName: 'webapp'
+    appName: 'webappnani143'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     runtimeStack: 'DOTNETCORE|6.0'
