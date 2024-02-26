@@ -34,5 +34,5 @@ steps:
     azureSubscription: 'man'
     appType: 'webAppLinux'
     appName: 'webappnani143'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     runtimeStack: 'DOTNETCORE|6.0'
